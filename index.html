@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gautam Coaching Class — focused mathematics tuition for SEBA students in Classes 8 to 12.">
+  <meta name="theme-color" content="#10243a">
+  <title>Gautam Coaching Class | Learn Maths with Confidence</title>
+  <style>
+    :root{--navy:#10243a;--blue:#2463eb;--sky:#eaf2ff;--ink:#172536;--muted:#627184;--paper:#f7f9fc;--white:#fff;--line:#e4eaf1;--gold:#f5b942}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.4px;color:var(--navy)}
+    .logo{width:42px;height:42px;border-radius:13px;background:var(--blue);color:white;display:grid;place-items:center;font-weight:900;font-size:20px}
+    .links{display:flex;gap:28px;color:#435267;font-size:14px;font-weight:650}.links a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--blue);color:white;padding:13px 20px;border-radius:11px;font-weight:750;font-size:14px;border:0;cursor:pointer;box-shadow:0 8px 20px #2463eb26;transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:#174fce}.btn.light{background:white;color:var(--navy);box-shadow:none}.btn.outline{background:transparent;color:var(--blue);border:1px solid #b8cdfb;box-shadow:none}
+    .hero{background:radial-gradient(circle at 85% 20%,#315b9c 0,transparent 32%),linear-gradient(120deg,#10243a,#173b62);color:white;padding:88px 0 82px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #ffffff40;border-radius:99px;color:#dceaff;font-size:12px;font-weight:750;letter-spacing:.7px;text-transform:uppercase}
+    h1{font-size:clamp(42px,5.3vw,66px);line-height:1.08;letter-spacing:-2.5px;margin:22px 0 20px;max-width:680px}.hero p{font-size:18px;color:#d5e1ef;max-width:580px;margin:0 0 28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.hero-note{margin-top:24px;color:#b9c9db;font-size:13px}
+    .study-card{background:#fff;color:var(--ink);padding:27px;border-radius:22px;box-shadow:0 25px 70px #07162955;transform:rotate(1.5deg)}
+    .study-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;font-weight:700}.study-icon{height:48px;width:48px;background:var(--sky);color:var(--blue);border-radius:14px;display:grid;place-items:center;font-size:25px}
+    .study-card h3{font-size:23px;line-height:1.2;margin:18px 0 8px}.study-card p{font-size:14px;color:var(--muted);margin:0 0 20px}.mini-list{display:grid;gap:12px}.mini-row{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:650}.check{width:22px;height:22px;border-radius:50%;background:#e8f7ef;color:#16834a;display:grid;place-items:center;font-size:13px}
+    section{padding:78px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.kicker{color:var(--blue);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px}.section-head h2{font-size:clamp(30px,4vw,42px);letter-spacing:-1.2px;line-height:1.15;margin:10px 0 13px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .courses{background:var(--paper)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.course{background:white;border:1px solid var(--line);border-radius:17px;padding:25px;transition:.2s}.course:hover{transform:translateY(-4px);box-shadow:0 14px 35px #152b4510}.course .num{font-size:12px;color:var(--blue);font-weight:850;letter-spacing:1px}.course h3{margin:10px 0 7px;font-size:21px;color:var(--navy)}.course p{color:var(--muted);font-size:14px;margin:0}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.about-panel{background:var(--sky);border-radius:22px;padding:32px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}.big-mark{font-size:76px;line-height:1;color:#2463eb;font-weight:900;letter-spacing:-5px}.about-panel strong{font-size:19px;color:var(--navy)}.about-panel span{font-size:13px;color:var(--muted)}
+    .about-copy h2{font-size:38px;line-height:1.15;letter-spacing:-1.3px;color:var(--navy);margin:10px 0 16px}.about-copy p{color:var(--muted)}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.fact{padding:14px;border:1px solid var(--line);border-radius:12px;font-size:13px;font-weight:700}.fact b{display:block;color:var(--blue);font-size:20px}
+    .method{background:var(--navy);color:white}.method .section-head h2{color:white}.method .section-head p{color:#bdcbd9}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border:1px solid #ffffff25;border-radius:16px;padding:23px}.step-no{color:#9bbcff;font-size:13px;font-weight:800}.step h3{margin:12px 0 7px;font-size:19px}.step p{color:#bdcbd9;font-size:14px;margin:0}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.contact-copy h2{font-size:38px;line-height:1.15;color:var(--navy);letter-spacing:-1.2px;margin:10px 0 14px}.contact-copy p{color:var(--muted)}.contact-card{border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 12px 32px #14283c0a}.field{margin-bottom:14px}.field label{display:block;font-size:13px;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #d9e1eb;border-radius:10px;font:inherit;font-size:14px;background:white;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.contact-card .btn{width:100%}.smallprint{font-size:12px;color:var(--muted);margin:12px 0 0}
+    footer{background:#0b1b2c;color:#c2cfdd;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px}.foot strong{color:white}
+    @media(max-width:800px){.links{display:none}.hero{padding:65px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.study-card{max-width:480px;transform:none}.grid3,.steps{grid-template-columns:1fr}.about-panel{min-height:220px}.facts{grid-template-columns:1fr 1fr}section{padding:60px 0}}
+    @media(max-width:480px){.wrap{width:min(100% - 30px,1120px)}.nav{height:66px}.nav>.btn{padding:10px 12px;font-size:12px}.brand{font-size:14px}.logo{width:37px;height:37px}.hero p{font-size:16px}.hero-actions .btn{width:100%}.foot{align-items:flex-start;flex-direction:column}.facts{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="logo">G</span><span>GAUTAM COACHING CLASS</span></a>
+    <nav class="links"><a href="#courses">Courses</a><a href="#about">About</a><a href="#method">Teaching approach</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Enquire now <span>↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">● Mathematics made understandable</span>
+        <h1>Build strong basics.<br>Grow with confidence.</h1>
+        <p>Offline mathematics tuition in Titabar for students in Classes 8–12, with clear explanations, regular practice and personal attention.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Enquire about classes <span>→</span></a><a class="btn light" href="#courses">Explore courses</a></div>
+        <div class="hero-note">Titabar · Offline classes · SEBA-focused learning · Assamese-medium support</div>
+      </div>
+      <div class="study-card">
+        <div class="study-top"><span>YOUR LEARNING JOURNEY</span><span class="study-icon">∑</span></div>
+        <h3>Maths becomes easier when concepts become clear.</h3>
+        <p>A supportive learning environment to ask questions, practise step by step and improve steadily.</p>
+        <div class="mini-list">
+          <div class="mini-row"><span class="check">✓</span> Understand the concept</div>
+          <div class="mini-row"><span class="check">✓</span> Solve guided examples</div>
+          <div class="mini-row"><span class="check">✓</span> Practise and review progress</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="courses" id="courses">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Courses</span><h2>Learning support for every stage</h2><p>Structured mathematics tuition aligned with school learning and exam preparation.</p></div>
+      <div class="grid3">
+        <article class="course"><span class="num">01 / FOUNDATION</span><h3>Classes 8–10</h3><p>Build mathematical foundations, strengthen problem-solving skills and prepare confidently for school assessments and board exams.</p></article>
+        <article class="course"><span class="num">02 / HIGHER SECONDARY</span><h3>Classes 11–12</h3><p>Work through important concepts, examples and exam-style questions with a focus on understanding and consistent practice.</p></article>
+        <article class="course"><span class="num">03 / PERSONAL SUPPORT</span><h3>Doubt clearing</h3><p>Get help with difficult topics, homework questions and revision through focused, step-by-step explanations.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-panel"><div class="big-mark">∑</div><div><strong>Clear concepts. Consistent practice.</strong><br><span>A student-focused approach to learning mathematics.</span></div></div>
+      <div class="about-copy"><span class="kicker">About the tutor</span><h2>Learn at your pace, with personal attention.</h2><p>Welcome to Gautam Coaching Class. The aim is to make mathematics less intimidating and more approachable through simple explanations, carefully chosen practice and a supportive classroom environment.</p><p>Teaching background: NIT Silchar graduate, with experience teaching mathematics. Offline classes are offered in Titabar, with a focus on SEBA students and Assamese-medium learners.</p>
+        <div class="facts"><div class="fact"><b>8–12</b>Classes covered</div><div class="fact"><b>Maths</b>Subject focus</div><div class="fact"><b>SEBA</b>Curriculum focus</div><div class="fact"><b>1:1</b>Personal guidance</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="method" id="method">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Teaching approach</span><h2>A simple path to better understanding</h2><p>Good results begin with strong concepts and regular effort.</p></div>
+      <div class="steps">
+        <article class="step"><span class="step-no">STEP 01</span><h3>Understand</h3><p>Start with the basics and learn why a method works, not just which formula to use.</p></article>
+        <article class="step"><span class="step-no">STEP 02</span><h3>Practise</h3><p>Build confidence through worked examples, guided problem-solving and regular exercises.</p></article>
+        <article class="step"><span class="step-no">STEP 03</span><h3>Improve</h3><p>Review mistakes, clear doubts and focus revision on topics that need more attention.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy"><span class="kicker">Get in touch</span><h2>Take the first step towards stronger maths.</h2><p>Interested in classes for yourself or your child? Send an enquiry and share the class level. We'll follow up with details about schedule, fees and availability.</p><p><strong>Gautam Coaching Class</strong><br>Offline mathematics tuition · Titabar · Classes 8–12</p></div>
+      <form class="contact-card" id="enquiry">
+        <div class="field"><label for="student">Student / parent name</label><input id="student" name="student" placeholder="Your name" required></div>
+        <div class="field"><label for="class">Class</label><select id="class" name="class" required><option value="">Choose class</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Your contact number" required></div>
+        <div class="field"><label for="message">Your message (optional)</label><textarea id="message" name="message" placeholder="Tell us what support you are looking for"></textarea></div>
+        <button class="btn" type="submit">Prepare enquiry <span>→</span></button>
+        <p class="smallprint">Phone contact details will be added soon. The enquiry form will be activated once an email address is added.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><div><strong>GAUTAM COACHING CLASS</strong><br>Learn with clarity. Improve with confidence.</div><div>© <span id="year"></span> Gautam Coaching Class</div></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('enquiry').addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(this);
+    const body = `Name: ${data.get('student')}\nClass: ${data.get('class')}\nPhone: ${data.get('phone')}\nMessage: ${data.get('message') || 'Not provided'}`;
+    // Replace the placeholder address below with your coaching-class email before publishing.
+    alert('Thank you for your interest! Contact details will be added soon. Please check back shortly.');
+  });
+</script>
+</body>
+</html>
